@@ -9,12 +9,13 @@
 #include "SoftwareSerial.h"
 #include "EEPROM.h"
 
+#include <stdio.h>
+
 SoftwareSerial SIMSerial(2,3); // RX, TX
 
 #define DEVICE 8						// Relay to this
 #define RSTTRIGGER 12					// connected to reset switch(tak switch) // pin 18 atmega(pb-4)// pulled down
-//#define RSTPULSE 4						// connected to actual reset pin PC6 (1 no) = pin 6 atmega
-//#define MOTION 9
+
 #define ADDR 5							// EEPROM address for digital pin status
 #define ADDR4RESUME 9					// EEPROM address for Power resume status
 #define ADDRMOTION 11					// EEPROM address for MOTION status (Enable/Disable)
