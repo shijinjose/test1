@@ -19,7 +19,7 @@ SoftwareSerial SIMSerial(2,3); // RX, TX
 #define ADDRMOTION 11					// EEPROM address for MOTION status (Enable/Disable)
 #define SENDPIN 5
 #define RECEIVEPIN 6
-//#define DEBUG							// To enable/disable serial print debug
+						// To enable/disable serial print debug
 
 enum sms_type_enum
 {
@@ -36,10 +36,7 @@ int ThreeAlert=0;
 int Motion_detect_pin = 9;
 int pirState = HIGH;					// we start, assuming no MOTION detected
 
-int pirConnected = 15;					// To check if PIR connected or not
-
-//byte active = 0;
-//byte reg_info = 0;
+int pirConnected = 15;					// To check if PIR connected or no
 byte ad_val = 0;
 byte latch_try_count = 0;
 byte loop_count = 0;
