@@ -9,8 +9,6 @@
 #include "SoftwareSerial.h"
 #include "EEPROM.h"
 
-#include <stdio.h>
-
 SoftwareSerial SIMSerial(2,3); // RX, TX
 
 #define DEVICE 8						// Relay to this
